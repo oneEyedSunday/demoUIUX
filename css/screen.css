@@ -1,0 +1,329 @@
+/*@import url(https://fonts.googleapis.com/css?family=Opens+Sans:300italic,700italic,300,700);*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+  margin: 0;
+  padding: 0;
+ }
+
+ #page {max-width: 1200px; margin: 0 auto ; position: relative;}
+
+/*General Text Styles*/
+h1 {
+  margin: 0 0 1em 0;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 .5em 0;
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+
+h3 {
+  margin: 0 0 .5em 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+h4 {
+  margin: 0 0 1em 0;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+p {  margin: 0 0 1em 0;}
+
+a {color: #ee45ff;}
+a:visited { color: #65b1ff;}
+
+a.btn { font-size: 1.2em; text-decoration: none; color: #fff;
+   border: 1px solid #fff; padding: 4px 15px;
+   transition: background-color .3s;
+  }
+a.btn:hover { background-color: rgba(255,255,255,.3);}
+
+/*General Header Styles*/
+
+header { height: 600px;background: #65b1ff url(../images/newbanner_1200x600.png) no-repeat center bottom; position: relative;}
+
+header a.logo {
+  position: absolute; display: none; z-index: 1;
+  width: 100px; height: 100px;
+  background: url(../images/logo.jpg) no-repeat 0 0 ;
+  background-size: contain;
+  top: 15px; left: 20px;
+}
+
+header a.logo span {display: none;}
+
+header div.hero { position: absolute; width: 42%; top: 130px; left: 55%;}
+header div.hero h1 { line-height: 1em; margin: 0 0 30px 0; color: #fff;}
+
+/*All Section*/
+section { padding: 0 30px;}
+section::after { content: ''; display: block; clear: both;}
+
+/*section: Main*/
+section.main { margin-top: 20px; margin-bottom: 30px; padding: 0;}
+section.main aside { width: 50%; float: left; text-align: center;}
+section.main .content { margin: 15px; background: no-repeat center top ; background-size: 75px 75px; padding-top: 85px;}
+section.main aside h3 a { color: #000; text-decoration: none; }
+section.main aside h3 a:hover { text-decoration: underline;}
+
+section.main aside .content.poetry { background-image: url(../images/blue_robot.svg);}
+section.main aside .content.rap { background-image: url(../images/pink_robot.svg);}
+
+/*section - Kanye*/
+section.kanye {background-color: #cc5567; padding-top: 30px; padding-bottom: 30px; color: #fff;}
+section.kanye article { padding: 0 20px 0 515px; background: url(../images/Kanye_west_yeezus_cover.png) no-repeat 0 5px;background-size:500px 400px; min-height: 300px;}
+
+
+/*section - GFK*/
+section.gfk { background-color: #eee9d9; position: relative; }
+section.gfk aside { width: 30%; float: left; margin-right: 10px;}
+section.gfk aside .content { padding:30px 30px 20px 0; }
+section.gfk aside .content img {display: block; margin-bottom: 15px; width: 70%; }
+section.gfk aside .content h4 {margin-bottom: 0;}
+section.gfk aside .content p {margin-bottom: 0.5em;}
+section.gfk aside .content a {display: inline-block; color: #cc6633; font-weight: 700;}
+
+section.gfk blockquote {
+  margin: 0; width: 32%;
+  color: #444;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0; right: 4%;
+ }
+
+section.gfk blockquote p { margin: 30px 30px 20px 50px;}
+section.gfk blockquote p.quote { font-style: italic; font-size: 1.2em;}
+section.gfk blockquote p.credit {
+   color: #777;
+   font-size: .9em; margin-top: 0;
+   padding-left: 20px; line-height: 1.3em;
+   position: relative;
+  }
+
+section.gfk blockquote::before { content: '\201c'; color: #d2bd65;
+  position: absolute;
+  top: 10px; left: 8px;
+  font-size: 5em;
+  font-family: serif;
+  }
+
+section.gfk blockquote p.quote::after { content: '\201d'; font-family: serif;}
+section.gfk blockquote p.credit::before { content: '\2014'; position: absolute; top: -1px; left: 0;}
+
+/*Navigation*/
+
+nav {
+  background-color: rgba(0,0,0,.5);
+  position: relative;
+  /*position: absolute;
+  top: 0px; left: 0px;*/
+  padding: 50px 0 0 0;
+  /*width: 100%;*/
+}
+
+nav::after { content: ''; display: block; clear: both;}
+
+nav a.mobile_menu {
+  display: none;
+  width: 32px; height: 32px;
+  background: url(../images/icon_menu.svg) no-repeat 0 0;
+  background-size: contain;
+  position: absolute;
+  top: 22px; left: 50%; margin-left: -16px;
+}
+
+nav ul {list-style: none; margin: 0; padding: 0px;}
+nav ul li:hover { background-color: #2b0306;}
+nav ul li:hover > ul {display: block;}
+
+nav ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 125px;
+  position: relative;
+}
+
+nav ul li a:visited { color: #fff;}
+nav ul li a:hover { background-color: #6d0911;}
+
+nav ul ul { position: absolute; top: 100%; background-color: #2b0306; display: none;}
+
+nav ul ul li { position: relative; }
+nav ul ul ul { left: 100%; top: 0px;}
+
+/*Top Level */
+nav > ul { padding-left: 200px;}
+nav > ul > li { float: left;}
+nav > ul > li > a { width: auto; padding: 10px 20px 15px 20px;}
+
+
+nav a[aria-haspopup='true']::after {
+  content: '';
+  display: block; width: 0px; height: 0px;
+  position: absolute;
+  top: 16px; right: 15px;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid white;
+}
+
+nav > ul > li > a[aria-haspopup='true']::after{
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #fff;
+  left: 20px; right: auto;
+  bottom: 6px; top: auto;
+}
+
+
+/*Footer*/
+footer { font-size: .9em; margin: 40px; color: #999;}
+footer div.content {display: inline; }
+footer a { margin-left: 30px; color: #777;}
+footer a:visited {color: #777;}
+footer a:hover {color: #000;}
+
+
+/*Media Queries*/
+@media screen and (max-width: 1000px){
+  h1 {font-size: 2.4em;}
+  /*header*/
+  header div.hero { left: 50%}
+  header div.hero h1{ margin-bottom: 20px;}
+
+  /*section - kanye*/
+  section.kanye article {padding-left: 400px; background-size: 375px auto;}
+
+}
+
+
+@media screen and (max-width: 805px ){
+  h1 { font-size: 2.2em;}
+  header  {height: 295px; background-image: url(../images/newbanner_825.png);}
+  header div.hero {top: 110px; left: 45%;}
+
+  section.kanye article {padding-left: 325px; background-size: 300px auto;}
+  section.gfk blockquote p.quote {font-size: 1.1em; line-height: 1.2em;}
+  section.gfk blockquote p.credit {font-size: .8em;}
+
+}
+
+@media screen and (max-width: 765px ){
+  h1 { font-size: 1.8em;}
+  h2 { font-size: 1.4em;}
+  h3 { font-size: 1.1em;}
+  a.btn {font-size: 1em;}
+
+  header a.logo { width: 145px; height: 60px; display: block;}
+  header div.hero {top: 130px; left: 40%;}
+
+  section.main { margin-top: 10px; margin-bottom: 10px;}
+  section.main aside div.content {background-size: 55px 55px; padding-top: 60px;}
+
+  section.gfk aside div.content img { width: 85%;}
+
+  nav { padding-top: 80px;}
+  nav > ul {padding-left: 10px;}
+}
+
+@media screen and (max-width: 625px ){
+  h1 {font-size: 1em;}
+  h3 {margin-bottom: 0px;}
+  a.btn {font-size: .9em;}
+
+  header  { height: auto;min-height: 223px; background-image: url(../images/newbanner_625.png); background-position: left 70px;}
+  /*nav { position: static; width: auto; padding: 20px 15px; background-color: #4b0a0c;}*/
+
+  nav {padding: 50px 15px 20px 15px;  background-color: #4b0a0c; height: 0px; overflow: hidden;}
+  nav a.mobile_menu { display: block;}
+  nav ul, nav ul ul, nav ul ul ul {display: block; position: static;}
+
+  nav > ul { padding: 0; }
+  nav > ul > li { float: none; margin-top: 25px;}
+
+  nav ul li:hover { background: none;}
+
+  nav ul li a {
+    width: auto;
+    display: block;
+    margin: 8px 10px;
+    /*padding: 8px 15px;*/
+    padding: 6px 15px 6px 2px;
+    /*border: 1px solid rgba(255,255,255,.25);*/
+    border-bottom: 1px solid rgba(255,255,255,.25);
+  }
+
+  nav ul li a:hover { background-color: rgba(255,255,255,.2);}
+
+  nav ul ul { background: none;}
+  nav ul ul li a { margin-left: 30px; }
+  nav ul ul ul li a { margin-left: 60px; }
+  nav a[aria-haspopup='true']::after{display: none;}
+
+
+
+header a.logo { display: none;}
+
+header div.hero { width: 300px; top: 75px; left: 40%;}
+header div.hero h1 {font-size: 1.5em; margin-bottom: 10px;}
+
+ section.main aside { width: 100%; float: none; text-align: left;}
+   section.main aside div.content {
+     margin: 8px 20px 8px 0;
+     padding: 5px 0px 10px 85px;
+     background-size: 50px 50px;
+     background-position: 20px 15px;
+   }
+
+ section.kanye article { padding: 200px 20px 0 0; background-size: 300px 180px; min-height: initial; }
+
+ section.gfk aside { width: 100%; float: none; margin: 0; position: relative;}
+ section.gfk aside div.content {padding: 20px 20px 20px 150px;}
+ section.gfk aside div.content p {font-size: .8em;}
+ section.gfk aside div.content img { display: inline-block; width: 125px;height: 55px; position: absolute; top: 20px; left: 0;}
+ section.gfk blockquote {
+   margin: 0 20px 0 40px;
+   width: 90%;
+   padding: 1px 0px 20px 0px;
+   position: relative;
+ }
+
+ section.gfk blockquote p.credit {margin-bottom: 0;}
+
+ footer div.content {display: block; margin-top: 15px;}
+
+footer div.content a { margin: 0 20px 0 0;}
+}
+
+@media screen and (max-width: 425px){
+  header {min-height: 151px; background-position: left bottom;
+     background-image: url(../images/newbanner_425.png);}
+  header a.logo { display: none;}
+  header div.hero { width: 100%; left: 0px; top: 86px; text-align: center;}
+  header div.hero h1 {font-size: 1em; margin-bottom: 10px;}
+  header div.hero a.btn {padding: 2px 30px; font-size: .7em;}
+  section.gfk aside div.content {padding: 140px 20px 20px 0px;}
+  section.gfk aside div.content img { width: auto; height: 100px; top: 30px;}
+  section.gfk blockquote {margin: 10px 40px 0 20px;}
+
+  nav { padding-top: 30px; }
+  nav a.mobile_menu {left: auto; right: 40px; top: 8px; margin-left: 0px;}
+  footer::after {content: ''; display: block; clear: both;}
+  footer div.content a {
+    display: inline-block; margin: 0 0 10px 0;
+    float: left;
+    clear: both;
+  }
+}
